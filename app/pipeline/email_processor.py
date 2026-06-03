@@ -79,6 +79,7 @@ def process_email(text):
 
         return {
             "category": category,
+            "ml_confidence": ml_confidence,
             "confidence": confidence,
             "saved": saved_count > 0,
             "saved_count": saved_count,
@@ -114,6 +115,7 @@ def process_email(text):
 
         return {
             "category": category,
+            "ml_confidence": ml_confidence,
             "confidence": confidence,
             "saved": saved,
             "data": cargo
@@ -148,6 +150,7 @@ def process_email(text):
 
         return {
             "category": category,
+            "ml_confidence": ml_confidence,
             "confidence": confidence,
             "saved": saved,
             "data": cargo
@@ -159,6 +162,7 @@ def process_email(text):
 
     return {
         "category": "UNKNOWN",
+        "ml_confidence": ml_confidence,
         "confidence": 0,
         "saved": False,
         "data": None
